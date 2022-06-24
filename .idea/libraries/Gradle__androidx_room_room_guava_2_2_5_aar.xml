@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.room:room-guava:2.2.5@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6a04cc64eb65fe2fb5cd358c1eaaa84d/room-guava-2.2.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d6a73190749af51747f29fcbdc75ca32/transformed/room-guava-2.2.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/579f5628c8679fa7f5494e8f40b2fa44/transformed/room-guava-2.2.5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/01ee3a6864f89a133e8c87797bc87fc4/transformed/room-guava-2.2.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/01ee3a6864f89a133e8c87797bc87fc4/transformed/room-guava-2.2.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/01ee3a6864f89a133e8c87797bc87fc4/transformed/room-guava-2.2.5/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/50411fa2f1369d9ca89b9c0828e412b7/transformed/room-guava-2.2.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8277d9edbec740a63c122e953b9958f0/transformed/room-guava-2.2.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d5700d3a9d56cda1a7426044bf779945/transformed/room-guava-2.2.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c7bee704b8b00959f19ac7ce6291c6b0/transformed/room-guava-2.2.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/db59522b520e283436efb8c817922441/transformed/room-guava-2.2.5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/db59522b520e283436efb8c817922441/transformed/room-guava-2.2.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/db59522b520e283436efb8c817922441/transformed/room-guava-2.2.5/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.room/room-guava/2.2.5/f4a1ac22b3999fbc255d6080bb7fa17a1cadf010/room-guava-2.2.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

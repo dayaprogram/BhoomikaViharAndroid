@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/login_bg"
+    tools:context=".Activity.LoginActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_vercode"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_tpwodl"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="40sp"
+                android:src="@drawable/bihar_logo"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/tv_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_tpwodl"
+                android:layout_marginTop="10sp"
+                android:fontFamily="@font/typostyle"
+                android:text="@string/app_name"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp" />
+
+            <RelativeLayout
+                android:id="@+id/ll_reg_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_heading">
+
+                <TextView
+                    android:id="@+id/tv_reg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/typostyle"
+                    android:gravity="center_horizontal"
+                    android:text="@string/sign_in"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_reg"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif-monospace"
+                    android:gravity="center_horizontal"
+                    android:text="@string/sign_to_connect_with_us"
+                    android:textColor="#305936"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_reg_title"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:theme="@style/MyAppTheme">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/loginId"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_baseline_person"
+                        android:fontFamily="@font/timesnewroman"
+                        android:gravity="left"
+                        android:hint="@string/userid"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        tools:ignore="RtlCompat,RtlHardcoded" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_name"
+                    android:theme="@style/MyAppTheme"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/timesnewroman"
+                        android:hint="@string/pass"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tv_forget_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pass"
+                    android:layout_margin="5dp"
+                    android:text="@string/forget_password"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#C60101"
+                    android:textSize="18sp"
+                    android:visibility="gone"
+                    tools:ignore="RtlCompat" />
+
+                <Button
+                    android:id="@+id/loginbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_forget_pass"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/bulegradientbuttonshape"
+                    android:drawableEnd="@drawable/ic_double_arrow"
+                    android:fontFamily="@font/timesnewroman"
+                    android:paddingEnd="10sp"
+                    android:text="@string/login"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/rl_vercode"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/txtVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="App Version : 1.0"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:typeface="serif"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

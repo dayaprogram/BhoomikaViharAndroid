@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.room:room-rxjava2:2.2.5@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/17b469faf254978290e7dd1d21ec2e87/room-rxjava2-2.2.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d4bfca3bdbd16e9535b5aac890841eb3/transformed/room-rxjava2-2.2.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c568346dd683ffbcdd4a8a0505c3a28c/transformed/room-rxjava2-2.2.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e259fe8fd84d02caccc79e0aa777086a/transformed/room-rxjava2-2.2.5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e259fe8fd84d02caccc79e0aa777086a/transformed/room-rxjava2-2.2.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e259fe8fd84d02caccc79e0aa777086a/transformed/room-rxjava2-2.2.5/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a0d87ccd27161c3f2573ccf16c53f6b8/transformed/room-rxjava2-2.2.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5fcc4cddce852e4bd3065b8396e095ec/transformed/room-rxjava2-2.2.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c452f9d22b107e87b92ad1650ef379fa/transformed/room-rxjava2-2.2.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/20ffd4407879a1275b5a5cd6cdfcc75d/transformed/room-rxjava2-2.2.5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/a0a17df164e80933f84ed58e1145b116/transformed/room-rxjava2-2.2.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a0a17df164e80933f84ed58e1145b116/transformed/room-rxjava2-2.2.5/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a0a17df164e80933f84ed58e1145b116/transformed/room-rxjava2-2.2.5/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.room/room-rxjava2/2.2.5/104bafc3fe7aedb917d8c793f9695a77021b984/room-rxjava2-2.2.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

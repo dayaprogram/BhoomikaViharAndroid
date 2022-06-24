@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:animationCache="true"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="6dp">
+
+        <RelativeLayout
+            android:id="@+id/farmerVerifyListLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLightBB"
+            android:padding="8dp">
+
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textRegNoTtl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="पंजीकरण संख्या: "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorAccent" />
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textRegNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/textRegNoTtl"
+                android:layout_toRightOf="@+id/textRegNoTtl"
+                android:text=" 2371525356497"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorRed"
+                android:textStyle="bold" />
+
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textApplicationIdTtl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textRegNo"
+                android:text="आधार संख्या : "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorAccent" />
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textAadharNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textRegNo"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/textApplicationIdTtl"
+                android:layout_toRightOf="@+id/textApplicationIdTtl"
+                android:gravity=""
+                android:text="26979697999799"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textFName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textAadharNo"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="Rakesh Kumar Ranjan"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorBlueDark"
+                android:textStyle="bold" />
+
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textFFatherNameTtl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textFName"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:text="पिता/पति का नाम:"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorAccent" />
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textFFatherName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textFName"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/textFFatherNameTtl"
+                android:layout_toRightOf="@+id/textFFatherNameTtl"
+                android:text="Sajiv Prasad"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textAffectedLandTtl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textFFatherName"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:text="जन्म तिथि: "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorAccent" />
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textDob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textFFatherName"
+                android:layout_toStartOf="@+id/textSubsidyAmtTtl"
+                android:layout_toLeftOf="@+id/textSubsidyAmtTtl"
+                android:layout_toEndOf="@+id/textAffectedLandTtl"
+                android:layout_toRightOf="@+id/textAffectedLandTtl"
+                android:text="01/01/1906"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryDark"
+                tools:ignore="UnknownIdInLayout" />
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textGenderTtl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textFFatherName"
+                android:layout_toStartOf="@+id/textGender"
+
+                android:layout_toLeftOf="@+id/textGender"
+                android:text="लिंग: "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorAccent" />
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textFFatherName"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="Male"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryDark" />
+
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textVillTtl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textGenderTtl"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:text="गावं : "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorAccent" />
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textVill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textGenderTtl"
+                android:layout_toStartOf="@+id/textCatogeryTtl"
+                android:layout_toLeftOf="@+id/textCatogeryTtl"
+                android:layout_toEndOf="@+id/textVillTtl"
+                android:layout_toRightOf="@+id/textVillTtl"
+                android:text="Punaichak Bathani"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textCatogeryTtl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textGenderTtl"
+                android:layout_toStartOf="@+id/textCatogery"
+
+                android:layout_toLeftOf="@+id/textCatogery"
+                android:text="कोटि: "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+
+                android:textColor="@color/colorAccent" />
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textCatogery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textGenderTtl"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="Samanya"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+
+                android:textColor="@color/colorPrimaryDark" />
+
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textMobileTtl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textVillTtl"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+
+                android:text="M. : "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorAccent" />
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textFMobNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textVillTtl"
+
+                android:layout_toEndOf="@+id/textMobileTtl"
+                android:layout_toRightOf="@+id/textMobileTtl"
+                android:text="987568588"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textFarmerGradeTtl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textVillTtl"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_toEndOf="@+id/textFMobNo"
+                android:layout_toRightOf="@+id/textFMobNo"
+                android:text="कृ. श्रेणी: "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorAccent" />
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textFarmerGrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textVillTtl"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/textFarmerGradeTtl"
+                android:layout_toRightOf="@+id/textFarmerGradeTtl"
+                android:text="Laghu"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryDark" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

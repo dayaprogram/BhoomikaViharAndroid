@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:animationCache="true"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLightY"
+            android:padding="8dp">
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/slNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorBlueDark"
+                android:textStyle="bold" />
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textCropNameTtl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_toEndOf="@+id/slNo"
+                android:layout_toRightOf="@+id/slNo"
+                android:text="Crop Name: "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textCropName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/textCropNameTtl"
+                android:layout_toRightOf="@+id/textCropNameTtl"
+                android:text="Wheat"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryDark" />
+
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textTypeofLandTtl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textCropName"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="4dp"
+                android:text="Type of Land: "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textTypeofLand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textCropName"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@+id/textTypeofLandTtl"
+                android:layout_toRightOf="@+id/textTypeofLandTtl"
+                android:text="Sinchit"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textThanaTtl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textTypeofLand"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="8dp"
+                android:text="Thana : "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textThanaNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textTypeofLand"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/textThanaTtl"
+                android:layout_toRightOf="@+id/textThanaTtl"
+                android:text="75354"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textKhataNoTtl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textTypeofLand"
+                android:layout_marginTop="8dp"
+                android:layout_toStartOf="@+id/textKhataNo"
+                android:layout_toLeftOf="@+id/textKhataNo"
+                android:text="Khata : "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textKhataNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textTypeofLand"
+                android:layout_marginTop="8dp"
+                android:layout_toStartOf="@+id/textPlotNoTtl"
+                android:layout_toLeftOf="@+id/textPlotNoTtl"
+                android:text="75354"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textPlotNoTtl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textTypeofLand"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toStartOf="@+id/textPlotNo"
+                android:layout_toLeftOf="@+id/textPlotNo"
+                android:text="Plot : "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textPlotNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textTypeofLand"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:text="654664"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryDark" />
+
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textAffctedLandTtl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textKhataNoTtl"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="8dp"
+                android:text="Aff. Land :"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textAffctedLand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textKhataNoTtl"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/textAffctedLandTtl"
+                android:layout_toRightOf="@+id/textAffctedLandTtl"
+                android:text="75354"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorRedDark" />
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textAspctedSubsidyTtl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textKhataNoTtl"
+                android:layout_marginTop="8dp"
+                android:layout_toStartOf="@+id/textAspctedSubsidy"
+                android:layout_toLeftOf="@+id/textAspctedSubsidy"
+                android:text="Sub. Amt.: "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+                android:id="@+id/textAspctedSubsidy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textKhataNoTtl"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:text="654664"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textAspctedSubsidy"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorLightB">
+
+                <TableRow android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Approved Land Type"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorBlueDark" />
+                </TableRow>
+
+                <TableRow android:padding="5dp">
+
+                    <Spinner
+                        android:id="@+id/spinnerChngLandType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textReason"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1"
+                        android:spinnerMode="dropdown" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Approved Land"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorBlueDark" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="Approved Amt."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorBlueDark" />
+                </TableRow>
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/editTextApprovedLand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:focusable="true"
+                        android:hint="(In Dismil)"
+                        android:inputType="number"
+                        android:longClickable="false"
+                        android:maxLength="4"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <TextView
+                        android:id="@+id/approvedAmt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="00.00"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorRedDark" />
+                </TableRow>
+            </TableLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

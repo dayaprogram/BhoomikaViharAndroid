@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textAddressInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:text="Area Details"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorPrimaryDark" />
+
+
+            <TextView
+                android:id="@+id/autoCompleteDistrict"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textAddressInfo"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:hint="@string/prompt_District"
+                android:padding="5dp"
+                android:selectAllOnFocus="true"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinnerDistrict"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textAddressInfo"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/autoCompleteDistrict"
+                android:layout_toRightOf="@+id/autoCompleteDistrict"
+                android:padding="5dp" />
+
+            <View
+                android:id="@+id/dividerDistrict"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/autoCompleteDistrict"
+                android:background="?android:attr/listDivider" />
+
+
+            <!--            <AutoCompleteTextView-->
+            <!--                android:id="@+id/autoCompleteBlock"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_below="@+id/autoCompleteDistrict"-->
+            <!--                android:layout_alignParentStart="true"-->
+            <!--                android:layout_alignParentLeft="true"-->
+            <!--                android:layout_alignParentEnd="true"-->
+            <!--                android:layout_alignParentRight="true"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:hint="@string/prompt_Block"-->
+            <!--                android:inputType="textCapWords"-->
+            <!--                android:selectAllOnFocus="true" />-->
+
+
+            <TextView
+                android:id="@+id/autoCompleteBlock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/autoCompleteDistrict"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:hint="@string/prompt_Block"
+                android:padding="5dp"
+                android:selectAllOnFocus="true"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinnerBlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/autoCompleteDistrict"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/autoCompleteBlock"
+                android:layout_toRightOf="@+id/autoCompleteBlock"
+                android:padding="5dp" />
+
+            <View
+                android:id="@+id/dividerBlock"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/autoCompleteBlock"
+                android:background="?android:attr/listDivider" />
+
+
+            <TextView
+                android:id="@+id/autoCompleteClass"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dividerBlock"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:hint="@string/prompt_Panchayat"
+                android:padding="5dp"
+                android:selectAllOnFocus="true"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinnerClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dividerBlock"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/autoCompleteClass"
+                android:layout_toRightOf="@+id/autoCompleteClass"
+                android:padding="5dp"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/dividerclass"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/autoCompleteClass"
+                android:background="?android:attr/listDivider" />
+
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/autoCompleteSchoolName"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_below="@+id/dividerclass"-->
+            <!--                android:layout_alignParentStart="true"-->
+            <!--                android:layout_alignParentLeft="true"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:hint="@string/prompt_SchoolName"-->
+            <!--                android:padding="5dp"-->
+            <!--                android:selectAllOnFocus="true"-->
+            <!--                android:textSize="18sp" />-->
+
+            <!--            <Spinner-->
+            <!--                android:id="@+id/spinnerSchool"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_below="@+id/dividerclass"-->
+            <!--                android:layout_alignParentEnd="true"-->
+            <!--                android:layout_alignParentRight="true"-->
+            <!--                android:layout_marginStart="10dp"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:layout_toEndOf="@+id/autoCompleteSchoolName"-->
+            <!--                android:layout_toRightOf="@+id/autoCompleteSchoolName"-->
+            <!--                android:gravity="fill"-->
+            <!--                android:padding="5dp"-->
+            <!--                android:spinnerMode="dropdown"-->
+            <!--                android:textAlignment="gravity" />-->
+
+            <!--            <View-->
+            <!--                android:id="@+id/dividerSchool"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="1dp"-->
+            <!--                android:layout_below="@+id/dividerclass"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:background="?android:attr/listDivider" />-->
+
+            <Button
+                android:id="@+id/btnSaveDetails"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dividerclass"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:padding="10dp"
+                android:text="Submit" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

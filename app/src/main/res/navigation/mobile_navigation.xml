@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.bhoomikabihar.surveyapp.Activity.MainFragments.home.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home" />
+
+    <!--    <activity-->
+    <!--        android:id="@+id/nav_gallery"-->
+    <!--        android:name="com.dbtagri.dbtagriverify.Activity.VerifyFarmer.FarmerListVerifyActivity"-->
+    <!--        android:label="Farmer Verification"-->
+    <!--        tools:layout="@layout/activity_farmer_list_verify" />-->
+    <activity
+        android:id="@+id/nav_gallery1"
+        android:name="com.bhoomikabihar.surveyapp.Activity.PMKisanVerification.SocialAuditVerificationListActivity"
+        android:label="Farmer Verification"
+        tools:layout="@layout/activity_farmer_list_verify" />
+    <activity
+        android:id="@+id/nav_gallery"
+        android:name="com.bhoomikabihar.surveyapp.Activity.PMKisanVerification.PMKisanListVerifyActivity"
+        android:label="Farmer Verification"
+        tools:layout="@layout/activity_farmer_list_verify" />
+    <activity
+        android:id="@+id/nav_PMKRecovery"
+        android:name="com.bhoomikabihar.surveyapp.Activity.PMKisanRecovery.PMKisanListRecoveryActivity"
+        android:label="Farmer Verification"
+        tools:layout="@layout/activity_farmer_list_verify" />
+
+    <activity
+        android:id="@+id/nav_slideshow"
+        android:name="com.bhoomikabihar.surveyapp.Activity.InputSubsidy.InputSubsidyActivity"
+        android:label="Input Subsidy Verification"
+        tools:layout="@layout/input_subsidy_activity" />
+</navigation>
