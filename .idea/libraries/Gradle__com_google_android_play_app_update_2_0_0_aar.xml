@@ -1,13 +1,14 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.play:app-update:2.0.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/a37c9d438a03515d45a1e47fd9a6853c/transformed/jetified-app-update-2.0.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9de72d1fe7fe7c8dfe4351bb5da79ee7/transformed/jetified-app-update-2.0.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b57505b4d8a5baa95768a16b3b6463a3/transformed/jetified-app-update-2.0.0/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/a37c9d438a03515d45a1e47fd9a6853c/transformed/jetified-app-update-2.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a37c9d438a03515d45a1e47fd9a6853c/transformed/jetified-app-update-2.0.0/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a37c9d438a03515d45a1e47fd9a6853c/transformed/jetified-app-update-2.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9de72d1fe7fe7c8dfe4351bb5da79ee7/transformed/jetified-app-update-2.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9de72d1fe7fe7c8dfe4351bb5da79ee7/transformed/jetified-app-update-2.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9de72d1fe7fe7c8dfe4351bb5da79ee7/transformed/jetified-app-update-2.0.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

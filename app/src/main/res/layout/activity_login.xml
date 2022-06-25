@@ -37,7 +37,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/img_tpwodl"
                 android:layout_marginTop="10sp"
-                android:fontFamily="@font/typostyle"
                 android:text="@string/app_name"
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimaryDark"
@@ -54,7 +53,6 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/typostyle"
                     android:gravity="center_horizontal"
                     android:text="@string/sign_in"
                     android:textAllCaps="true"
@@ -89,14 +87,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:theme="@style/MyAppTheme">
+                    android:theme="@style/AppTheme">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/loginId"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:drawableEnd="@drawable/ic_baseline_person"
-                        android:fontFamily="@font/timesnewroman"
                         android:gravity="left"
                         android:hint="@string/userid"
                         android:imeOptions="actionNext"
@@ -109,14 +106,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/user_name"
-                    android:theme="@style/MyAppTheme"
+                    android:theme="@style/AppTheme"
                     app:passwordToggleEnabled="true">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/txtpassword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/timesnewroman"
                         android:hint="@string/pass"
                         android:inputType="textPassword" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -142,7 +138,6 @@
                     android:layout_marginTop="30dp"
                     android:background="@drawable/bulegradientbuttonshape"
                     android:drawableEnd="@drawable/ic_double_arrow"
-                    android:fontFamily="@font/timesnewroman"
                     android:paddingEnd="10sp"
                     android:text="@string/login"
                     android:textAllCaps="false"

@@ -12,8 +12,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d5700d3a9d56cda1a7426044bf779945/transformed/room-guava-2.2.5/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c7bee704b8b00959f19ac7ce6291c6b0/transformed/room-guava-2.2.5/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/db59522b520e283436efb8c817922441/transformed/room-guava-2.2.5/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/db59522b520e283436efb8c817922441/transformed/room-guava-2.2.5/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/db59522b520e283436efb8c817922441/transformed/room-guava-2.2.5/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/ef7c3f547dc2b468633ab879d4afd738/transformed/room-guava-2.2.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ef7c3f547dc2b468633ab879d4afd738/transformed/room-guava-2.2.5/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ef7c3f547dc2b468633ab879d4afd738/transformed/room-guava-2.2.5/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

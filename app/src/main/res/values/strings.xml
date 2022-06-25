@@ -71,4 +71,20 @@
     <string name="pass"> Password ( पासवर्ड )</string>
     <string name="save">Save</string>
 
+    <string name="name">Name</string>
+    <string name="father_name">Farmer Name</string>
+    <string name="gender">Gender</string>
+    <string name="category">Category</string>
+    <string name="qualification">Qualification</string>
+    <string name="clg_school">College/School Name</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="email_id">Email Id</string>
+    <string name="district">District</string>
+    <string name="block">Block</string>
+    <string name="state">State</string>
+    <string name="country">Country</string>
+    <string name="save_details">Save Details</string>
+    <string name="title_activity_feedback_question">FeedbackQuestionActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
 </resources>

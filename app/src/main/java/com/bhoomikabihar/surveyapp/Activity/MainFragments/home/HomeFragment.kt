@@ -14,10 +14,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bseb.crossword.ViewAdaptor.DashboardMenuAdaptor
 import com.bhoomikabihar.surveyapp.Activity.ContactUs
 import com.bhoomikabihar.surveyapp.Activity.PMKISANAnkshan.PMKISANAnksheanActivity
-import com.bhoomikabihar.surveyapp.Activity.PMKisanRecovery.PMKisanListRecoveryActivity
 import com.bhoomikabihar.surveyapp.Activity.PMKisanVerification.PMKisanListVerifyActivity
 import com.bhoomikabihar.surveyapp.Activity.PMKisanVerification.PMKisanACVerificationListActivity
-import com.bhoomikabihar.surveyapp.BuildConfig
+import com.bhoomikabihar.surveyapp.Activity.RegistrationFeedback.RegisterParticipentActivity
 import com.bhoomikabihar.surveyapp.Model.DashBoardContain
 import com.bhoomikabihar.surveyapp.R
 import com.example.dbtagri.RemoteDataRepository.SessionManager
@@ -74,8 +73,8 @@ class HomeFragment : Fragment(), RecyclerViewClickInterface {
                         R.drawable.contact
                     ),
                     DashBoardContain(
-                        "UpdateApp",
-                        "Update Application",
+                        "Suggestion",
+                        "Give Your Suggestion",
                         "",
                         R.drawable.optimization
                     )
@@ -126,10 +125,9 @@ class HomeFragment : Fragment(), RecyclerViewClickInterface {
                         "सम्पर्क सूत्र",
                         "",
                         R.drawable.contact
-                    ),
-                    DashBoardContain(
-                        "UpdateApp",
-                        "Update Application",
+                    ), DashBoardContain(
+                        "Suggestion",
+                        "Give Your Suggestion",
                         "",
                         R.drawable.optimization
                     )
@@ -205,8 +203,8 @@ class HomeFragment : Fragment(), RecyclerViewClickInterface {
         }
 
 
-        if (DashBoardContainList[position].intentID == "PMKisanRecovery") {
-            val intent = Intent(requireView().context, PMKisanListRecoveryActivity::class.java)
+        if (DashBoardContainList[position].intentID == "Suggestion") {
+            val intent = Intent(requireView().context, RegisterParticipentActivity::class.java)
             requireView().context.startActivity(intent)
         }
 

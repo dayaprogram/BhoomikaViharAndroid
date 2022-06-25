@@ -17,8 +17,6 @@ import androidx.navigation.ui.setupWithNavController
 import com.bhoomikabihar.surveyapp.R
 import com.example.dbtagri.RemoteDataRepository.SessionManager
 import com.google.android.material.navigation.NavigationView
-import kotlinx.android.synthetic.main.activity_pmkisanankshean.*
-import java.util.*
 
 
 class MainActivity : AppCompatActivity() {

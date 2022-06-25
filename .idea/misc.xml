@@ -27,13 +27,23 @@
         <entry key="..\:/AndroidRemote/ACAdminApp/app/src/main/res/layout/layout_farmer_call_list.xml" value="0.4" />
         <entry key="..\:/AndroidRemote/ACAdminApp/app/src/main/res/layout/layout_farmer_list.xml" value="0.13958333333333334" />
         <entry key="..\:/AndroidRemote/ACAdminApp/app/src/main/res/layout/layout_farmer_list_verify.xml" value="0.25416666666666665" />
+        <entry key="..\:/BhomikaBiharProject/bhoomikavihar/app/src/main/res/drawable/bulegradientbuttonshape.xml" value="0.1" />
         <entry key="..\:/BhomikaBiharProject/bhoomikavihar/app/src/main/res/drawable/card_view_boarder.xml" value="0.1255" />
         <entry key="..\:/BhomikaBiharProject/bhoomikavihar/app/src/main/res/drawable/circle_stock.xml" value="0.2045" />
+        <entry key="..\:/BhomikaBiharProject/bhoomikavihar/app/src/main/res/drawable/home_shape.xml" value="0.155" />
         <entry key="..\:/BhomikaBiharProject/bhoomikavihar/app/src/main/res/drawable/ic_baseline_person.xml" value="0.2045" />
         <entry key="..\:/BhomikaBiharProject/bhoomikavihar/app/src/main/res/drawable/side_nav_bar.xml" value="0.2045" />
+        <entry key="..\:/BhomikaBiharProject/bhoomikavihar/app/src/main/res/font/popins.xml" value="0.3447265625" />
+        <entry key="..\:/BhomikaBiharProject/bhoomikavihar/app/src/main/res/layout/activity_farmer_list_verify.xml" value="0.196875" />
+        <entry key="..\:/BhomikaBiharProject/bhoomikavihar/app/src/main/res/layout/activity_feedback_question.xml" value="0.196875" />
+        <entry key="..\:/BhomikaBiharProject/bhoomikavihar/app/src/main/res/layout/activity_login.xml" value="0.40084835630965004" />
         <entry key="..\:/BhomikaBiharProject/bhoomikavihar/app/src/main/res/layout/activity_main.xml" value="0.196875" />
-        <entry key="..\:/BhomikaBiharProject/bhoomikavihar/app/src/main/res/layout/app_bar_main.xml" value="0.196875" />
-        <entry key="..\:/BhomikaBiharProject/bhoomikavihar/app/src/main/res/layout/content_main.xml" value="0.196875" />
+        <entry key="..\:/BhomikaBiharProject/bhoomikavihar/app/src/main/res/layout/activity_otp_verfication.xml" value="0.14635416666666667" />
+        <entry key="..\:/BhomikaBiharProject/bhoomikavihar/app/src/main/res/layout/activity_register_participent.xml" value="0.22" />
+        <entry key="..\:/BhomikaBiharProject/bhoomikavihar/app/src/main/res/layout/app_bar_main.xml" value="0.1" />
+        <entry key="..\:/BhomikaBiharProject/bhoomikavihar/app/src/main/res/layout/app_title_bar.xml" value="0.13333333333333333" />
+        <entry key="..\:/BhomikaBiharProject/bhoomikavihar/app/src/main/res/layout/content_main.xml" value="0.33" />
+        <entry key="..\:/BhomikaBiharProject/bhoomikavihar/app/src/main/res/layout/fragment_feedback_question.xml" value="0.196875" />
         <entry key="..\:/BhomikaBiharProject/bhoomikavihar/app/src/main/res/layout/layout_dashboard_menu.xml" value="0.196875" />
         <entry key="..\:/BhomikaBiharProject/bhoomikavihar/app/src/main/res/layout/nav_header_main.xml" value="0.196875" />
         <entry key="..\:/BhomikaBiharProject/bhoomikavihar/app/src/main/res/menu/activity_main_drawer.xml" value="0.67" />

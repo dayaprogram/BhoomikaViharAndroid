@@ -21,7 +21,6 @@
             android:text="Verification Code"
             android:textColor="@color/colorBlack"
             android:textSize="30sp"
-            android:fontFamily="@font/typostyle"
             android:gravity="center_horizontal" />
 
         <TextView
@@ -31,7 +30,6 @@
             android:text="Please enter the OTP sent \n on your registered phone number"
             android:textColor="@color/colorBlack"
             android:textSize="20sp"
-            android:fontFamily="@font/timesnewroman"
             android:gravity="center_horizontal" />
     </LinearLayout>
 
@@ -112,7 +110,6 @@
             android:textColor="@color/colorBlack"
             android:visibility="visible"
             android:textAlignment="center"
-            android:fontFamily="@font/typostyle"
             android:layout_marginRight="5dp"
             android:gravity="center" />
 
@@ -121,7 +118,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:fontFamily="@font/typostyle"
             android:textAlignment="center"
             android:gravity="center"
             android:textColor="#515151" />
@@ -134,7 +130,6 @@
             android:text="Resend"
             android:textSize="18dp"
             android:visibility="visible"
-            android:fontFamily="@font/typostyle"
             android:textAlignment="center"
             android:gravity="center"
             android:textColor="@color/colorBlueDark" />
@@ -155,7 +150,6 @@
             android:background="@drawable/bulegradientbuttonshape"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:fontFamily="@font/typostyle"
             android:text="Validate"
             android:textAllCaps="false"
             android:textColor="#ffffff"
