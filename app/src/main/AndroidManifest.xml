@@ -30,7 +30,10 @@
         android:roundIcon="@drawable/dbt_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity
+            android:name=".Activity.RegistrationFeedback.FeedbackQuestionActivity"
+            android:exported="false"
+            android:label="@string/pmkisan_phy_verification_Title" />
         <activity
             android:name=".Activity.RegistrationFeedback.RegisterParticipentActivity"
             android:exported="false"
