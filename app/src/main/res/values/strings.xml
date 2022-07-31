@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Bihar Bhoomika</string>
-    <string name="app_icon">डी.बी.टी. सत्यापन</string>
+    <string name="app_name">Bhoomika Vihar</string>
+    <string name="app_icon">Bhoomika Vihar</string>
     <string name="pm_kisan_ankshan">PM-किसान अंकेक्षण</string>
     <string name="farmer_Call_Verification_Title">उर्वरक उपलब्धता एवं बिक्री हेतु जाँच के लिए किसान की सूचि</string>
     <string name="pmkisan_phy_verification_Title">पी.एम.-किसान भौतिक सत्यापन</string>

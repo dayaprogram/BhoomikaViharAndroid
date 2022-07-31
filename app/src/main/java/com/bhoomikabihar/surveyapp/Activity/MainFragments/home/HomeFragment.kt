@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bhoomikabihar.surveyapp.Activity.ContactUs
 import com.bhoomikabihar.surveyapp.Activity.PdfViewActivity
 import com.bhoomikabihar.surveyapp.Activity.RegistrationFeedback.FeedbackQuestionActivity
+import com.bhoomikabihar.surveyapp.Activity.RegistrationFeedback.RegisterParticipentActivity
 import com.bhoomikabihar.surveyapp.Model.DashBoardContain
 import com.bhoomikabihar.surveyapp.R
 import com.bseb.crossword.ViewAdaptor.DashboardMenuAdaptor
@@ -63,12 +64,12 @@ class HomeFragment : Fragment(), RecyclerViewClickInterface {
                         R.drawable.immigration
                     ),
 
-                    DashBoardContain(
-                        "Certificate",
-                        "सर्टिफिकेट",
-                        "",
-                        R.drawable.bihar_logo_copy
-                    ),
+//                    DashBoardContain(
+//                        "Certificate",
+//                        "सर्टिफिकेट",
+//                        "",
+//                        R.drawable.bihar_logo_copy
+//                    ),
                     DashBoardContain(
                         "ContactUs",
                         "सम्पर्क सूत्र",
@@ -113,7 +114,7 @@ class HomeFragment : Fragment(), RecyclerViewClickInterface {
 
 
         if (DashBoardContainList[position].intentID == "Suggestion") {
-            val intent = Intent(requireView().context, FeedbackQuestionActivity::class.java)
+            val intent = Intent(requireView().context, RegisterParticipentActivity::class.java)
             requireView().context.startActivity(intent)
         }
 

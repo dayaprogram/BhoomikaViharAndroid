@@ -80,7 +80,8 @@ class SessionManager(context: Context) {
         const val AC_Name = "AC_Name"
         const val AC_Mobile = "AC_Mobile"
         const val userRole = "userRole"
-
+        const val AC_Email = "AC_Email"
+        const val AC_Gender = "AC_Gender"
         const val distId = "distId"
         const val blockId = "blockId"
         const val panchayatId = "panchayatId"
@@ -96,39 +97,31 @@ class SessionManager(context: Context) {
 
     fun clearToken() {
         val editor = prefs.edit()
-        editor.putString(AC_UserId, "")
         editor.putString(AC_Name, "")
         editor.putString(AC_Mobile, "")
-        editor.putString(userRole, "")
-        editor.putString(distId, "")
-        editor.putString(blockId, "")
-        editor.putString(panchayatId, "")
+        editor.putString(AC_Email, "")
+        editor.putString(AC_Gender, "")
         editor.clear()
         editor.apply()
     }
 
 
-    fun saveAuthDetails(loginResponse: LoginResponse) {
+    fun saveAuthDetails(loginResponse: User) {
         val editor = prefs.edit()
-        editor.putString(AC_UserId, loginResponse.userId)
         editor.putString(AC_Name, loginResponse.name)
-        editor.putString(AC_Mobile, loginResponse.MobileNo)
-        editor.putString(userRole, loginResponse.userRole)
-        editor.putString(distId, loginResponse.distId)
-        editor.putString(blockId, loginResponse.blockId)
-        editor.putString(panchayatId, loginResponse.panchayatId)
+        editor.putString(AC_Mobile, loginResponse.mobileNo)
+        editor.putString(AC_Email, loginResponse.emailId)
+        editor.putString(AC_Gender, loginResponse.gender)
         editor.apply()
     }
 
     fun fetchAuthACDetails(): User {
         var user: User = User(
-            prefs.getString(AC_UserId, "")!!,
             prefs.getString(AC_Name, "")!!,
             prefs.getString(AC_Mobile, "")!!,
+            prefs.getString(AC_Email, "")!!,
+            prefs.getString(AC_Gender, "")!!,
             prefs.getString(userRole, "")!!,
-            prefs.getString(distId, "")!!,
-            prefs.getString(blockId, "")!!,
-            prefs.getString(panchayatId, "")!!
         )
         return user
     }

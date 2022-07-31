@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
 
         userName = findViewById(R.id.userName)
 
-        userName.setText(sessionManager.fetchAuthACDetails().userid)
+        userName.setText(sessionManager.fetchAuthACDetails().name)
 
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
 

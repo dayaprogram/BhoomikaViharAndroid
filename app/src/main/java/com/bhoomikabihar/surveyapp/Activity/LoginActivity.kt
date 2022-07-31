@@ -70,8 +70,8 @@ class LoginActivity : AppCompatActivity() {
                         ) {
                             if (response.isSuccessful) {
                                 val loginResponse = response.body()
-                                sessionManager.saveAuthToken(loginResponse!!.authToken)
-                                sessionManager.saveAuthDetails(loginResponse)
+//                                sessionManager.saveAuthToken(loginResponse!!.authToken)
+//                                sessionManager.saveAuthDetails(loginResponse)
 
                                 startActivity(mainIntent)
 

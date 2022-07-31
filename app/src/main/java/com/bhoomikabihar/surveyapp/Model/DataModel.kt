@@ -3,32 +3,12 @@ package com.bhoomikabihar.surveyapp.Model
 import com.google.gson.annotations.SerializedName
 
 data class LoginResponse(
-    @SerializedName("access_token")
-    var authToken: String,
-    @SerializedName("token_type")
-    var tokenType: String,
-    @SerializedName("expires_in")
-    var expiresIn: Int,
-    @SerializedName("userId")
-    var userId: String,
-    @SerializedName("Name")
-    var name: String,
-    @SerializedName("userrole")
-    var userRole: String,
-    @SerializedName("Mobileno")
-    var MobileNo: String,
-    @SerializedName(".issued")
-    var issued: String,
-    @SerializedName(".expires")
-    var expires: String,
-    @SerializedName("distId")
-    var distId: String,
-    @SerializedName("blockId")
-    var blockId: String,
-    @SerializedName("panchayatId")
-    var panchayatId: String,
 
-    )
+    var name: String,
+    var email: String,
+    var mobileNo: String,
+    var gender: String
+)
 
 //data class LoginRequest(
 //    @SerializedName("grant_type")
@@ -40,18 +20,13 @@ data class LoginResponse(
 //)
 
 data class User(
-    @SerializedName("id")
-    var userid: String,
-
     @SerializedName("first_name")
     var name: String,
-
     @SerializedName("last_name")
     var mobileNo: String,
-    var userRole: String,
-    var distId: String,
-    var blockId: String,
-    var panchayat: String
+    var emailId: String,
+    var gender: String,
+    var userRole: String
 )
 
 data class Post(
