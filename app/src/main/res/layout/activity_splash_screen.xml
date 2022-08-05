@@ -17,13 +17,13 @@
         />
 
 
-    <com.bhoomikabihar.surveyapp.CustomView.HindiTextView
+    <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="10dp"
-        android:text="( कृषि भवन, मीठापुर, पटना-800001  )"
+        android:text="(  पटना-800001  )"
         android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

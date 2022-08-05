@@ -34,11 +34,11 @@
         <activity
             android:name=".Activity.RegistrationFeedback.FeedbackQuestionActivity"
             android:exported="false"
-            android:label="@string/pmkisan_phy_verification_Title" />
+            android:label="@string/app_name" />
         <activity
             android:name=".Activity.RegistrationFeedback.RegisterParticipentActivity"
             android:exported="false"
-            android:label="@string/pmkisan_phy_verification_Title" />
+            android:label="@string/app_name" />
         <activity
             android:name=".Activity.OTPVerfication"
             android:exported="false" />

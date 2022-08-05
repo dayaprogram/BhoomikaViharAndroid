@@ -21,7 +21,7 @@ class PdfViewActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pdf_view)
 
-
+        val progressbar = findViewById<ProgressBar>(R.id.progressBar)
         val toolbar: Toolbar = findViewById(R.id.title_toolbar)
 
         setSupportActionBar(toolbar)
@@ -34,46 +34,45 @@ class PdfViewActivity : AppCompatActivity() {
 
         webView.settings.javaScriptEnabled = true
         // Enable responsive layout
-        webView.getSettings().setUseWideViewPort(true);
+        webView.settings.useWideViewPort = true;
 // Zoom out if the content width is greater than the width of the viewport
-        webView.getSettings().setLoadWithOverviewMode(true);
+        webView.settings.loadWithOverviewMode = true;
 
-        webView.getSettings().setSupportZoom(false);
-        webView.getSettings().setBuiltInZoomControls(false); // allow pinch to zooom
-        webView.getSettings()
-            .setDisplayZoomControls(false); // disable the default zoom controls on the page
+        webView.settings.setSupportZoom(false);
+        webView.settings.builtInZoomControls = false; // allow pinch to zooom
+        webView.settings.displayZoomControls =
+            false; // disable the default zoom controls on the page
         var url = intent.getStringExtra("URL").toString()
         webView.loadUrl(url)
 
-//        webView.webViewClient = object : WebViewClient() {
-//            override fun onPageFinished(view: WebView, url: String) {
-//                progressbar.visibility = View.GONE
-//            }
-//
-//
-//
-//        }
-
         webView.webViewClient = object : WebViewClient() {
-            // var progressDialog: ProgressDialog? = ProgressDialog(Context)
-            val progressbar = findViewById<ProgressBar>(R.id.progressBar)
-            override fun onPageStarted(view: WebView, url: String, favicon: Bitmap) {
-                super.onPageStarted(view, url, favicon)
-//                progressDialog!!.setTitle("Loading...")
-//                progressDialog!!.setMessage("Please wait...")
-//                progressDialog!!.setCancelable(false)
-//                progressDialog!!.show()
-                progressbar.visibility = View.VISIBLE
-            }
-
-            override fun onPageCommitVisible(view: WebView, url: String) {
-                super.onPageCommitVisible(view, url)
-//                if (progressDialog != null) {
-//                    progressDialog!!.dismiss()
-//                }
+            override fun onPageFinished(view: WebView, url: String) {
                 progressbar.visibility = View.GONE
             }
+
+
         }
+
+//        webView.webViewClient = object : WebViewClient() {
+//            // var progressDialog: ProgressDialog? = ProgressDialog(Context)
+//            val progressbar = findViewById<ProgressBar>(R.id.progressBar)
+//            override fun onPageStarted(view: WebView, url: String, favicon: Bitmap) {
+//                super.onPageStarted(view, url, favicon)
+////                progressDialog!!.setTitle("Loading...")
+////                progressDialog!!.setMessage("Please wait...")
+////                progressDialog!!.setCancelable(false)
+////                progressDialog!!.show()
+//                progressbar.visibility = View.VISIBLE
+//            }
+//
+//            override fun onPageCommitVisible(view: WebView, url: String) {
+//                super.onPageCommitVisible(view, url)
+////                if (progressDialog != null) {
+////                    progressDialog!!.dismiss()
+////                }
+//                progressbar.visibility = View.GONE
+//            }
+//        }
     }
 
 
