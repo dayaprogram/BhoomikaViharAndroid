@@ -195,6 +195,7 @@ class GPSTracker(context: Context) : Service(), LocationListener {
 //        TODO("Not yet implemented")
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onStatusChanged(provider: String, status: Int, extras: Bundle) {}
     override fun onBind(arg0: Intent?): IBinder? {
         return null

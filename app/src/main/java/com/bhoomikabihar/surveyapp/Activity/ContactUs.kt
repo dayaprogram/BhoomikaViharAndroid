@@ -43,12 +43,12 @@ class ContactUs : AppCompatActivity() {
         val textemail = findViewById<TextView>(R.id.textemail)
         // set on-click listener
         textemail.setOnClickListener {
-            val intent = Intent(Intent.ACTION_VIEW)
-            val data = Uri.parse(
-                "mailto:" + textemail.text + "?subject=" + Uri.encode("") + "&body=" + Uri.encode("")
-            )
-            intent.data = data
-            startActivity(intent)
+//            val intent = Intent(Intent.ACTION_VIEW)
+//            val data = Uri.parse(
+//                "mailto:" + textemail.text + "?subject=" + Uri.encode("") + "&body=" + Uri.encode("")
+//            )
+//            intent.data = data
+//            startActivity(intent)
         }
 
 

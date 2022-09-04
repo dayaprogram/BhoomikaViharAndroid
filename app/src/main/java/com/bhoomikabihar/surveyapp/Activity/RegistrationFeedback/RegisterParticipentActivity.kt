@@ -10,7 +10,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.constraintlayout.widget.ConstraintLayout
-import com.bhoomikabihar.surveyapp.Activity.PMKisanVerification.SocialAuditVerificationViewModel
 import com.bhoomikabihar.surveyapp.Activity.PdfViewActivity
 import com.bhoomikabihar.surveyapp.Model.User
 import com.bhoomikabihar.surveyapp.R
@@ -20,7 +19,7 @@ import com.google.android.material.textfield.TextInputEditText
 
 class RegisterParticipentActivity : AppCompatActivity() {
 
-    private lateinit var viewModel: SocialAuditVerificationViewModel
+    private lateinit var viewModel: RegisterParticipentViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,7 +38,7 @@ class RegisterParticipentActivity : AppCompatActivity() {
 //            }
 //        })
 
-        viewModel = SocialAuditVerificationViewModel(application)
+        viewModel = RegisterParticipentViewModel(application)
 
         var inputName = findViewById<TextInputEditText>(R.id.input_name)
 //        var inputFatherName = findViewById<TextInputEditText>(R.id.input_father_name)

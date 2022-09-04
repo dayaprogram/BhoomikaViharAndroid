@@ -90,10 +90,10 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.action_logout -> {
                 var sessionManager: SessionManager = SessionManager(this)
-                val mainIntent = Intent(this, LoginActivity::class.java)
+                //val mainIntent = Intent(this, LoginActivity::class.java)
                 sessionManager.clearToken()
-                startActivity(mainIntent)
-                finish()
+                //startActivity(mainIntent)
+                //finish()
                 true
             }
 

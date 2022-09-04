@@ -1,4 +1,4 @@
-package com.bhoomikabihar.surveyapp.Activity.PMKisanVerification
+package com.bhoomikabihar.surveyapp.Activity.RegistrationFeedback
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
@@ -8,7 +8,7 @@ import com.bseb.crossword.RemoteDataRepository.RemoteRepository
 import com.bhoomikabihar.surveyapp.CustomClass.SingleLiveEvent
 import com.bhoomikabihar.surveyapp.Model.*
 
-class PMKisanACVerificationViewModel(application: Application) : AndroidViewModel(application) {
+class RegisterParticipentViewModel(application: Application) : AndroidViewModel(application) {
 
     private var remoteRepository: RemoteRepository? = null
 
@@ -50,22 +50,8 @@ class PMKisanACVerificationViewModel(application: Application) : AndroidViewMode
     }
 
     fun getUnVerifiedPMKisanList() {
-        remoteRepository?.getUnVerifiedACPMKisanFarmer()!!
+        remoteRepository?.getUnVerifiedSocialAuditPMKisanFarmer()!!
         remoteRepository?.liveUnVerifiedSocialAuditFarmerList!!.observeForever { result ->
-            _unVerifiedFarmerList.value = result
-        }
-    }
-
-    fun getUnVerifiedPMKisanCOList() {
-        remoteRepository?.getUnVerifiedCOPMKisanFarmer()!!
-        remoteRepository?.liveUnVerifiedCOAuditFarmerList!!.observeForever { result ->
-            _unVerifiedFarmerList.value = result
-        }
-    }
-
-    fun getUnVerifiedPMKisanADMList() {
-        remoteRepository?.getUnVerifiedADMPMKisanFarmer()!!
-        remoteRepository?.liveUnVerifiedADMAuditFarmerList!!.observeForever { result ->
             _unVerifiedFarmerList.value = result
         }
     }
@@ -77,23 +63,8 @@ class PMKisanACVerificationViewModel(application: Application) : AndroidViewMode
         }
     }
 
-    fun
-            saveApprovedFarmerDetails(farmerVerifyData: PMKisanVerifyACModel) {
-        remoteRepository?.saveVerifiedACPMKisanFarmerDetails(farmerVerifyData)!!
-        remoteRepository?.liveFarmerVerifiedPMKisanResponse!!.observeForever { result ->
-            _farmerVerifyResponse.value = result
-        }
-    }
-
-    fun saveApprovedCOFarmerDetails(farmerVerifyData: PMKisanVerifyCOModel) {
-        remoteRepository?.saveVerifiedCOPMKisanFarmerDetails(farmerVerifyData)!!
-        remoteRepository?.liveFarmerVerifiedPMKisanResponse!!.observeForever { result ->
-            _farmerVerifyResponse.value = result
-        }
-    }
-
-    fun saveApprovedADMFarmerDetails(farmerVerifyData: PMKisanVerifyADMModel) {
-        remoteRepository?.saveVerifiedADMPMKisanFarmerDetails(farmerVerifyData)!!
+    fun saveApprovedFarmerDetails(farmerVerifyData: PMKisanSocialAuditModel) {
+        remoteRepository?.saveVerifiedSocialAuditPMKisanFarmerDetails(farmerVerifyData)!!
         remoteRepository?.liveFarmerVerifiedPMKisanResponse!!.observeForever { result ->
             _farmerVerifyResponse.value = result
         }
