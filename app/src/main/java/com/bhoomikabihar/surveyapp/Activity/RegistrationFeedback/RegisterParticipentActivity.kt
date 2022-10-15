@@ -46,21 +46,6 @@ class RegisterParticipentActivity : AppCompatActivity() {
         var inputEmail = findViewById<TextInputEditText>(R.id.input_email)
         var btnSaveDetail = findViewById<Button>(R.id.btnSaveDetail)
         var radioGroupGender = findViewById<View>(R.id.radioGroupGender) as RadioGroup
-        var participantLayout = findViewById<View>(R.id.participantLayout) as ConstraintLayout
-
-//        radioGroupGender.setOnCheckedChangeListener { radioGroup, i ->
-//
-//            val gen: Int = radioGroup.checkedRadioButtonId
-//            if (gen != -1) {
-//                var selectedRadioButton = findViewById<RadioButton>(gen)
-//                val selectedRbText = selectedRadioButton.text.toString()
-//                if (selectedRbText == "MALE") {
-//                    participantLayout.setBackgroundColor(R.color.colorLightP)
-//                } else if (selectedRbText == "FEMALE") {
-//                    participantLayout.setBackgroundColor(R.color.colorLightB)
-//                }
-//            }
-//        }
 
 
         var sessionManager = SessionManager(applicationContext)

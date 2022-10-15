@@ -43,26 +43,26 @@ class HomeFragment : Fragment(), RecyclerViewClickInterface {
         //adding some items to our list
 
 
-            DashBoardContainList.addAll(
-                listOf(
-                    DashBoardContain(
-                        "OurNews",
-                        "हमारी ख़बरें",
-                        "",
-                        R.drawable.approve
-                    ),
-                    DashBoardContain(
-                        "BhumikaVarta",
-                        "भूमिका वार्ता",
-                        "",
-                        R.drawable.immigration
-                    ),
-                    DashBoardContain(
-                        "Suggestion",
-                        "आपका विचार",
-                        "",
-                        R.drawable.immigration
-                    ),
+        DashBoardContainList.addAll(
+            listOf(
+                /*DashBoardContain(
+                    "OurNews",
+                    "हमारी ख़बरें",
+                    "",
+                    R.drawable.approve
+                ),
+                DashBoardContain(
+                    "BhumikaVarta",
+                    "भूमिका वार्ता",
+                    "",
+                    R.drawable.immigration
+                ),*/
+                DashBoardContain(
+                    "Suggestion",
+                    "#He4She",
+                    "",
+                    R.drawable.hesheicon
+                ),
 
 //                    DashBoardContain(
 //                        "Certificate",
@@ -70,14 +70,51 @@ class HomeFragment : Fragment(), RecyclerViewClickInterface {
 //                        "",
 //                        R.drawable.bihar_logo_copy
 //                    ),
-                    DashBoardContain(
-                        "ContactUs",
-                        "सम्पर्क सूत्र",
-                        "",
-                        R.drawable.contact
-                    )
+                DashBoardContain(
+                    "Index",
+                    "About Us",
+                    "",
+                    R.drawable.aboutusinfo
+                ),
+                DashBoardContain(
+                    "ContactUs",
+                    "Contact Us",
+                    "",
+                    R.drawable.contactus
+                ),
+                DashBoardContain(
+                    "MissionAndVision",
+                    "Mission And Vision",
+                    "",
+                    R.drawable.mission
+                ),
+                DashBoardContain(
+                    "OurTeam",
+                    "Our Team",
+                    "",
+                    R.drawable.teamlink
+                ),
+                DashBoardContain(
+                    "Approach",
+                    "Approach",
+                    "",
+                    R.drawable.approach
+                ),
+                DashBoardContain(
+                    "OrgStruct",
+                    "Orgnisation Structure",
+                    "",
+                    R.drawable.orgnisationstructure
+                ),
+                DashBoardContain(
+                    "ThematicAreas",
+                    "Thematic Areas",
+                    "",
+                    R.drawable.thematicareas
+                ),
+
                 )
-            )
+        )
 
 
 
@@ -120,6 +157,60 @@ class HomeFragment : Fragment(), RecyclerViewClickInterface {
 
         if (DashBoardContainList[position].intentID == "ContactUs") {
             val intent = Intent(requireView().context, ContactUs::class.java)
+            requireView().context.startActivity(intent)
+        }
+        if (DashBoardContainList[position].intentID == "Index") {
+            val intent = Intent(requireView().context, PdfViewActivity::class.java)
+            var url = "https://www.bhoomikavihar.in/HomeAndroid/Index"
+            intent.putExtra("URL", url)
+            requireView().context.startActivity(intent)
+        }
+        if (DashBoardContainList[position].intentID == "MissionAndVision") {
+            val intent = Intent(requireView().context, PdfViewActivity::class.java)
+            var url = "https://www.bhoomikavihar.in/HomeAndroid/MissionAndVision"
+            intent.putExtra("URL", url)
+            requireView().context.startActivity(intent)
+        }
+        if (DashBoardContainList[position].intentID == "OurTeam") {
+            val intent = Intent(requireView().context, PdfViewActivity::class.java)
+            var url = "https://www.bhoomikavihar.in/HomeAndroid/OurTeam"
+            intent.putExtra("URL", url)
+            requireView().context.startActivity(intent)
+        }
+        if (DashBoardContainList[position].intentID == "OrgStruct") {
+            val intent = Intent(requireView().context, PdfViewActivity::class.java)
+            var url = "https://www.bhoomikavihar.in/HomeAndroid/OrgStruct"
+            intent.putExtra("URL", url)
+            requireView().context.startActivity(intent)
+        }
+        if (DashBoardContainList[position].intentID == "Geography") {
+            val intent = Intent(requireView().context, PdfViewActivity::class.java)
+            var url = "https://www.bhoomikavihar.in/HomeAndroid/Geography"
+            intent.putExtra("URL", url)
+            requireView().context.startActivity(intent)
+        }
+        if (DashBoardContainList[position].intentID == "ThematicAreas") {
+            val intent = Intent(requireView().context, PdfViewActivity::class.java)
+            var url = "https://www.bhoomikavihar.in/HomeAndroid/ThematicAreas"
+            intent.putExtra("URL", url)
+            requireView().context.startActivity(intent)
+        }
+        if (DashBoardContainList[position].intentID == "SuccessStroies") {
+            val intent = Intent(requireView().context, PdfViewActivity::class.java)
+            var url = "https://www.bhoomikavihar.in/HomeAndroid/SuccessStroies"
+            intent.putExtra("URL", url)
+            requireView().context.startActivity(intent)
+        }
+        if (DashBoardContainList[position].intentID == "MazaorMileStone") {
+            val intent = Intent(requireView().context, PdfViewActivity::class.java)
+            var url = "https://www.bhoomikavihar.in/HomeAndroid/MazaorMileStone"
+            intent.putExtra("URL", url)
+            requireView().context.startActivity(intent)
+        }
+        if (DashBoardContainList[position].intentID == "Partners") {
+            val intent = Intent(requireView().context, PdfViewActivity::class.java)
+            var url = "https://www.bhoomikavihar.in/HomeAndroid/Partners"
+            intent.putExtra("URL", url)
             requireView().context.startActivity(intent)
         }
 

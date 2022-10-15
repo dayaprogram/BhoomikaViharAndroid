@@ -18,38 +18,38 @@ class ContactUs : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_contact_us)
-        val toolbar: Toolbar = findViewById(R.id.title_toolbar)
-
-        setSupportActionBar(toolbar)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true);
-        supportActionBar?.setDisplayShowHomeEnabled(true);
-
-
-        val textmobile = findViewById<TextView>(R.id.textmobile)
-        // set on-click listener
-        textmobile.setOnClickListener {
-            val i = Intent(Intent.ACTION_CALL)
-            i.data = Uri.parse("tel:" + textmobile.text.toString())
-            if (ContextCompat.checkSelfPermission(
-                    applicationContext,
-                    Manifest.permission.CALL_PHONE
-                ) == PackageManager.PERMISSION_GRANTED
-            ) {
-                startActivity(i)
-            } else {
-                requestPermissions(arrayOf(Manifest.permission.CALL_PHONE), 1)
-            }
-        }
-        val textemail = findViewById<TextView>(R.id.textemail)
-        // set on-click listener
-        textemail.setOnClickListener {
-//            val intent = Intent(Intent.ACTION_VIEW)
-//            val data = Uri.parse(
-//                "mailto:" + textemail.text + "?subject=" + Uri.encode("") + "&body=" + Uri.encode("")
-//            )
-//            intent.data = data
-//            startActivity(intent)
-        }
+//        val toolbar: Toolbar = findViewById(R.id.title_toolbar)
+//
+//        setSupportActionBar(toolbar)
+//        supportActionBar?.setDisplayHomeAsUpEnabled(true);
+//        supportActionBar?.setDisplayShowHomeEnabled(true);
+//
+//
+//        val textmobile = findViewById<TextView>(R.id.textmobile)
+//        // set on-click listener
+//        textmobile.setOnClickListener {
+//            val i = Intent(Intent.ACTION_CALL)
+//            i.data = Uri.parse("tel:" + textmobile.text.toString())
+//            if (ContextCompat.checkSelfPermission(
+//                    applicationContext,
+//                    Manifest.permission.CALL_PHONE
+//                ) == PackageManager.PERMISSION_GRANTED
+//            ) {
+//                startActivity(i)
+//            } else {
+//                requestPermissions(arrayOf(Manifest.permission.CALL_PHONE), 1)
+//            }
+//        }
+//        val textemail = findViewById<TextView>(R.id.textemail)
+//        // set on-click listener
+//        textemail.setOnClickListener {
+////            val intent = Intent(Intent.ACTION_VIEW)
+////            val data = Uri.parse(
+////                "mailto:" + textemail.text + "?subject=" + Uri.encode("") + "&body=" + Uri.encode("")
+////            )
+////            intent.data = data
+////            startActivity(intent)
+//        }
 
 
     }
