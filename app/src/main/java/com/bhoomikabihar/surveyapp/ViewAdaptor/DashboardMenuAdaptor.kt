@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -48,18 +49,16 @@ public class DashboardMenuAdaptor(
             mCtx.resources.getDrawable(dashBoardContain.image)
         )
         viewHolder.viewsLayout.setVerticalGravity(position)
-
-
         val param1 = viewHolder.textViewTitle.layoutParams as ViewGroup.MarginLayoutParams
         viewHolder.textViewTitle.layoutParams = param1
 //            viewHolder.textViewTitle.textSize = 24F
         viewHolder.textViewTitle.setTypeface(null, Typeface.BOLD);
-        if (position % 2 == 1) {
-            param1.setMargins(10, 8, 32, 48)
-            viewHolder.viewsLayout.setBackgroundColor(Color.argb(100, 243, 181, 181))
-        } else {
-            viewHolder.viewsLayout.setBackgroundColor(Color.argb(100, 251, 251, 226))
-        }
+//        if (position % 3 == 1) {
+//            param1.setMargins(10, 8, 32, 48)
+//            viewHolder.viewsLayout.setBackgroundColor(Color.argb(100, 243, 181, 181))
+//        } else {
+//            viewHolder.viewsLayout.setBackgroundColor(Color.argb(100, 251, 251, 226))
+//        }
     }
 
     override fun getItemCount(): Int {

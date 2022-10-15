@@ -8,17 +8,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bhoomikabihar.surveyapp.Activity.ContactUs
 import com.bhoomikabihar.surveyapp.Activity.PdfViewActivity
-import com.bhoomikabihar.surveyapp.Activity.RegistrationFeedback.FeedbackQuestionActivity
 import com.bhoomikabihar.surveyapp.Activity.RegistrationFeedback.RegisterParticipentActivity
 import com.bhoomikabihar.surveyapp.Model.DashBoardContain
 import com.bhoomikabihar.surveyapp.R
 import com.bseb.crossword.ViewAdaptor.DashboardMenuAdaptor
 import com.example.dbtagri.RemoteDataRepository.SessionManager
 import com.example.dbtagri.ViewAdaptor.RecyclerViewClickInterface
+
 
 class HomeFragment : Fragment(), RecyclerViewClickInterface {
     lateinit var DashBoardContainList: MutableList<DashBoardContain>
@@ -45,71 +46,54 @@ class HomeFragment : Fragment(), RecyclerViewClickInterface {
 
         DashBoardContainList.addAll(
             listOf(
-                /*DashBoardContain(
-                    "OurNews",
-                    "हमारी ख़बरें",
-                    "",
-                    R.drawable.approve
-                ),
-                DashBoardContain(
-                    "BhumikaVarta",
-                    "भूमिका वार्ता",
-                    "",
-                    R.drawable.immigration
-                ),*/
+
                 DashBoardContain(
                     "Suggestion",
                     "#He4She",
-                    "",
+                    "He+She Feedback",
                     R.drawable.hesheicon
                 ),
 
-//                    DashBoardContain(
-//                        "Certificate",
-//                        "सर्टिफिकेट",
-//                        "",
-//                        R.drawable.bihar_logo_copy
-//                    ),
                 DashBoardContain(
                     "Index",
                     "About Us",
-                    "",
+                    "Explore Who We are?",
                     R.drawable.aboutusinfo
                 ),
                 DashBoardContain(
                     "ContactUs",
                     "Contact Us",
-                    "",
+                    "Get in touch with us",
                     R.drawable.contactus
                 ),
                 DashBoardContain(
                     "MissionAndVision",
                     "Mission And Vision",
-                    "",
+                    "Development and human rights",
                     R.drawable.mission
                 ),
                 DashBoardContain(
                     "OurTeam",
                     "Our Team",
-                    "",
+                    "Bhoomika Vihar Team",
                     R.drawable.teamlink
                 ),
                 DashBoardContain(
                     "Approach",
                     "Approach",
-                    "",
+                    "Steps toward accomplishment",
                     R.drawable.approach
                 ),
                 DashBoardContain(
                     "OrgStruct",
-                    "Orgnisation Structure",
-                    "",
+                    "Organisation Structure",
+                    "Define the goals",
                     R.drawable.orgnisationstructure
                 ),
                 DashBoardContain(
                     "ThematicAreas",
                     "Thematic Areas",
-                    "",
+                    "Thematic Areas of Interventions",
                     R.drawable.thematicareas
                 ),
 
@@ -117,16 +101,14 @@ class HomeFragment : Fragment(), RecyclerViewClickInterface {
         )
 
 
-
-
-
         val adapter = DashboardMenuAdaptor(requireContext(), DashBoardContainList, this)
         // Fill Recycler View
         val linearLayoutManager2 = LinearLayoutManager(
-            requireContext(), LinearLayoutManager.VERTICAL, false
+            requireContext(), LinearLayoutManager.HORIZONTAL, false
         )
+        val mLayoutManager: GridLayoutManager = GridLayoutManager(requireContext(), 2)
         val recyclerView = root.findViewById(R.id.recyclerViewDashboard) as RecyclerView
-        recyclerView.layoutManager = linearLayoutManager2
+        recyclerView.layoutManager = mLayoutManager
         recyclerView.setHasFixedSize(true)
         recyclerView.adapter = adapter
 

@@ -32,14 +32,12 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
 
-        var sessionManager: SessionManager = SessionManager(applicationContext)
-        userRole = sessionManager.fetchAuthACDetails().userRole;
+        var sessionManager = SessionManager(applicationContext)
+        var user = sessionManager.fetchAuthACDetails()
         val navigationView = findViewById<View>(R.id.nav_view) as NavigationView
         val headerView: View = navigationView.getHeaderView(0)
-        headerView.findViewById<TextView>(R.id.UserNameTitle).text ="DAYANAND SAGAR"
-            //sessionManager.fetchAuthACDetails().name.capitalize()
-        headerView.findViewById<TextView>(R.id.textViewSubdtl).text ="7890197952"
-            //sessionManager.fetchAuthACDetails().mobileNo
+        headerView.findViewById<TextView>(R.id.UserNameTitle).text = user.name.uppercase()
+        headerView.findViewById<TextView>(R.id.textViewSubdtl).text = user.mobileNo
 
         userName = findViewById(R.id.userName)
 
