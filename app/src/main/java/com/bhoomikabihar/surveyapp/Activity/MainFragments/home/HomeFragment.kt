@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bhoomikabihar.surveyapp.Activity.ContactUs
+import com.bhoomikabihar.surveyapp.Activity.PaymentGetway.DonationActivity
 import com.bhoomikabihar.surveyapp.Activity.PdfViewActivity
 import com.bhoomikabihar.surveyapp.Activity.RegistrationFeedback.RegisterParticipentActivity
 import com.bhoomikabihar.surveyapp.Model.DashBoardContain
@@ -53,7 +54,12 @@ class HomeFragment : Fragment(), RecyclerViewClickInterface {
                     "He+She Feedback",
                     R.drawable.hesheicon
                 ),
-
+                DashBoardContain(
+                    "Donate",
+                    "Donate",
+                    "Help To Improve",
+                    R.drawable.immigration
+                ),
                 DashBoardContain(
                     "Index",
                     "About Us",
@@ -195,6 +201,11 @@ class HomeFragment : Fragment(), RecyclerViewClickInterface {
             intent.putExtra("URL", url)
             requireView().context.startActivity(intent)
         }
+        if (DashBoardContainList[position].intentID ==  "Donate") {
+            val intent = Intent(requireView().context, DonationActivity::class.java)
+            requireView().context.startActivity(intent)
+        }
+
 
     }
 
