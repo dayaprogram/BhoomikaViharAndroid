@@ -52,37 +52,37 @@ class HomeFragment : Fragment(), RecyclerViewClickInterface {
                     "Suggestion",
                     "#He4She",
                     "He+She Feedback",
-                    R.drawable.hesheicon
+                    R.drawable.heforshe
                 ),
                 DashBoardContain(
                     "Donate",
                     "Donate",
                     "Help To Improve",
-                    R.drawable.immigration
+                    R.drawable.donatebhoomika
                 ),
                 DashBoardContain(
                     "Index",
                     "About Us",
                     "Explore Who We are?",
-                    R.drawable.aboutusinfo
+                    R.drawable.avoutbhoomika
                 ),
                 DashBoardContain(
                     "ContactUs",
                     "Contact Us",
                     "Get in touch with us",
-                    R.drawable.contactus
+                    R.drawable.contactbhoomikapage
                 ),
                 DashBoardContain(
                     "MissionAndVision",
                     "Mission And Vision",
                     "Development and human rights",
-                    R.drawable.mission
+                    R.drawable.missionandvishionbh
                 ),
                 DashBoardContain(
                     "OurTeam",
                     "Our Team",
                     "Bhoomika Vihar Team",
-                    R.drawable.teamlink
+                    R.drawable.bhoomikateam
                 ),
                 DashBoardContain(
                     "Approach",
@@ -94,13 +94,31 @@ class HomeFragment : Fragment(), RecyclerViewClickInterface {
                     "OrgStruct",
                     "Organisation Structure",
                     "Define the goals",
-                    R.drawable.orgnisationstructure
+                    R.drawable.organo
                 ),
                 DashBoardContain(
                     "ThematicAreas",
                     "Thematic Areas",
                     "Thematic Areas of Interventions",
                     R.drawable.thematicareas
+                ),
+                DashBoardContain(
+                    "Geography",
+                    "Geographical Representation",
+                    "Representation of geography on map",
+                    R.drawable.geography
+                ),
+                DashBoardContain(
+                    "MazaorMilestone",
+                    "Mazaor Milestone",
+                    "achievements of the organization",
+                    R.drawable.mazaormilestone
+                ),
+                DashBoardContain(
+                    "Certifications",
+                    "Certifications And Compliances",
+                    "Complete details of Certifications And Compliances",
+                    R.drawable.certificateandcomp
                 ),
 
                 )
@@ -122,35 +140,22 @@ class HomeFragment : Fragment(), RecyclerViewClickInterface {
     }
 
     override fun onItemClick(position: Int) {
-
-        if (DashBoardContainList[position].intentID == "OurNews") {
-            val intent = Intent(requireView().context, PdfViewActivity::class.java)
-            var url = "https://www.bhoomikavihar.in/Home/BhoomikaNewsLetter"
-            intent.putExtra("URL", url)
-            requireView().context.startActivity(intent)
-        }
-
-        if (DashBoardContainList[position].intentID == "BhumikaVarta") {
-            val intent = Intent(requireView().context, PdfViewActivity::class.java)
-            var url = "https://www.bhoomikavihar.in/Home/TheTransformativeJourney"
-            intent.putExtra("URL", url)
-            requireView().context.startActivity(intent)
-        }
-
-
         if (DashBoardContainList[position].intentID == "Suggestion") {
             val intent = Intent(requireView().context, RegisterParticipentActivity::class.java)
             requireView().context.startActivity(intent)
         }
-
-        if (DashBoardContainList[position].intentID == "ContactUs") {
-            val intent = Intent(requireView().context, ContactUs::class.java)
+        if (DashBoardContainList[position].intentID ==  "Donate") {
+            val intent = Intent(requireView().context, DonationActivity::class.java)
             requireView().context.startActivity(intent)
         }
         if (DashBoardContainList[position].intentID == "Index") {
             val intent = Intent(requireView().context, PdfViewActivity::class.java)
             var url = "https://www.bhoomikavihar.in/HomeAndroid/Index"
             intent.putExtra("URL", url)
+            requireView().context.startActivity(intent)
+        }
+        if (DashBoardContainList[position].intentID == "ContactUs") {
+            val intent = Intent(requireView().context, ContactUs::class.java)
             requireView().context.startActivity(intent)
         }
         if (DashBoardContainList[position].intentID == "MissionAndVision") {
@@ -165,15 +170,15 @@ class HomeFragment : Fragment(), RecyclerViewClickInterface {
             intent.putExtra("URL", url)
             requireView().context.startActivity(intent)
         }
-        if (DashBoardContainList[position].intentID == "OrgStruct") {
+        if (DashBoardContainList[position].intentID == "Approach") {
             val intent = Intent(requireView().context, PdfViewActivity::class.java)
-            var url = "https://www.bhoomikavihar.in/HomeAndroid/OrgStruct"
+            var url = "https://www.bhoomikavihar.in/HomeAndroid/Approach"
             intent.putExtra("URL", url)
             requireView().context.startActivity(intent)
         }
-        if (DashBoardContainList[position].intentID == "Geography") {
+        if (DashBoardContainList[position].intentID == "OrgStruct") {
             val intent = Intent(requireView().context, PdfViewActivity::class.java)
-            var url = "https://www.bhoomikavihar.in/HomeAndroid/Geography"
+            var url = "https://www.bhoomikavihar.in/HomeAndroid/OrgStruct"
             intent.putExtra("URL", url)
             requireView().context.startActivity(intent)
         }
@@ -183,28 +188,26 @@ class HomeFragment : Fragment(), RecyclerViewClickInterface {
             intent.putExtra("URL", url)
             requireView().context.startActivity(intent)
         }
-        if (DashBoardContainList[position].intentID == "SuccessStroies") {
+        if (DashBoardContainList[position].intentID == "Geography") {
             val intent = Intent(requireView().context, PdfViewActivity::class.java)
-            var url = "https://www.bhoomikavihar.in/HomeAndroid/SuccessStroies"
+            var url = "https://www.bhoomikavihar.in/HomeAndroid/Geography"
             intent.putExtra("URL", url)
             requireView().context.startActivity(intent)
         }
-        if (DashBoardContainList[position].intentID == "MazaorMileStone") {
+
+        if (DashBoardContainList[position].intentID == "MazaorMilestone") {
             val intent = Intent(requireView().context, PdfViewActivity::class.java)
             var url = "https://www.bhoomikavihar.in/HomeAndroid/MazaorMileStone"
             intent.putExtra("URL", url)
             requireView().context.startActivity(intent)
         }
-        if (DashBoardContainList[position].intentID == "Partners") {
+        if (DashBoardContainList[position].intentID == "Certifications") {
             val intent = Intent(requireView().context, PdfViewActivity::class.java)
-            var url = "https://www.bhoomikavihar.in/HomeAndroid/Partners"
+            var url = "https://www.bhoomikavihar.in/HomeAndroid/Legal"
             intent.putExtra("URL", url)
             requireView().context.startActivity(intent)
         }
-        if (DashBoardContainList[position].intentID ==  "Donate") {
-            val intent = Intent(requireView().context, DonationActivity::class.java)
-            requireView().context.startActivity(intent)
-        }
+
 
 
     }

@@ -14,7 +14,7 @@
             app:titleTextColor="@color/md_theme_light_onTertiary"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorSecondary" />
+            android:background="@color/md_theme_light_primary" />
 
     </com.google.android.material.appbar.AppBarLayout>
 

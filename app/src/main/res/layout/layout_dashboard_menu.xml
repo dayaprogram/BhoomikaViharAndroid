@@ -62,8 +62,8 @@
 
 
     <androidx.cardview.widget.CardView
-        android:layout_width="160dp"
-        android:layout_height="190dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_margin="10dp"
         android:foreground="?android:attr/selectableItemBackground"
         app:cardCornerRadius="14dp"
@@ -82,9 +82,19 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="6dp"
+
                 android:padding="10dp"
                 android:src="@drawable/ic_baseline_login_24" />
+
+
+            <View
+                android:id="@+id/textVwiewdiv"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_above="@+id/textViewTitle"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:background="@color/lightgray" />
 
             <TextView
                 android:id="@+id/textViewTitle"
@@ -93,7 +103,7 @@
                 android:layout_below="@+id/imageView"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
-                android:padding="8dp"
+                android:padding="4dp"
                 android:text="Participate"
                 android:textAlignment="center"
                 android:textStyle="bold" />
@@ -101,11 +111,11 @@
             <View
                 android:id="@+id/textViewdiv"
                 android:layout_width="match_parent"
-                android:layout_height="5dp"
+                android:layout_height="2dp"
                 android:layout_below="@+id/textViewTitle"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
-              android:layout_margin="4dp"
+
                 android:background="@color/lightgray" />
 
             <TextView
@@ -116,9 +126,9 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:padding="8dp"
-                android:textAlignment="center"
                 android:text="He+She Feedback"
-                android:textColor="@android:color/darker_gray" />
+                android:textAlignment="center"
+                android:textColor="@color/md_theme_dark_onSecondary" />
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
