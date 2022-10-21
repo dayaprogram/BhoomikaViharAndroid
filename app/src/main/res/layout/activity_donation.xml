@@ -37,13 +37,43 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="110dp">
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="#FFFFFF"
+                        android:src="@drawable/completelogo" />
 
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/card_view_boardershashi"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    android:orientation="vertical"
+                    android:paddingTop="15dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="5dp"
+                        android:text="Support Marginalized Girls/Women (Bihar)"
+                        android:textSize="15sp"
+                        android:textAllCaps="true"
+                        android:textFontWeight="@integer/material_motion_duration_long_1"
+
+                        />
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="80dp"
+                        android:layout_height="15dp"
                         android:layout_alignParentBottom="true"
-                        android:background="#E2E2E2"
+                        android:background="#3F51B5"
                         android:gravity="center">
 
                         <!--                    <TextView-->
@@ -55,32 +85,6 @@
                         <!--                        android:textSize="12sp" />-->
 
                     </LinearLayout>
-
-                    <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:layout_centerHorizontal="true"
-                        android:background="#FFFFFF"
-                        android:src="@drawable/completelogo" />
-
-                </RelativeLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#f2f2f2"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:paddingTop="15dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:paddingTop="0dp"
-                        android:paddingBottom="5dp"
-                        android:text="Bhoomika Bihar"
-                        android:textSize="20sp" />
 
                     <EditText
                         android:id="@+id/mobileno"
@@ -118,15 +122,14 @@
 
                     <Button
                         android:id="@+id/btn_pay"
-                        android:layout_width="match_parent"
-                        android:layout_height="72dp"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="36dp"
-                        android:layout_marginBottom="20dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:text="Donate"
-                        android:textSize="14sp" />
+                        android:layout_width="180sp"
+                        android:layout_height="wrap_content"
+                        android:text="Pay Now"
+                        android:textAllCaps="false"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
 
                 </LinearLayout>
 
@@ -139,8 +142,8 @@
                     android:paddingTop="10dp"
                     android:paddingRight="20dp"
                     android:paddingBottom="10dp"
-                    android:text="Secure Payments by Razorpay"
-                    android:textColor="#a1ddee"
+                    android:text="Secure Payments via Razorpay payment gateway"
+                    android:textColor="#000000"
                     android:textSize="12sp"
                     android:textStyle="italic" />
 
