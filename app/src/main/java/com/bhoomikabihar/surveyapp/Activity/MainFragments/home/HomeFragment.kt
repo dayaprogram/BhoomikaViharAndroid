@@ -111,7 +111,7 @@ class HomeFragment : Fragment(), RecyclerViewClickInterface {
                 ),
                 DashBoardContain(
                     "MazaorMilestone",
-                    "Mazaor Milestone",
+                    "Major Milestone",
                     "achievements of the organization",
                     R.drawable.mazaormilestone
                 ),
