@@ -1,26 +1,24 @@
-package com.bhoomikabihar.surveyapp.Activity
+package com.bhoomikabihar.surveyapp.Activity.RegistrationFeedback
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.webkit.WebChromeClient
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import android.widget.Button
 import android.widget.ProgressBar
-import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.bhoomikabihar.surveyapp.R
 
-
-class PdfViewActivity : AppCompatActivity() {
-    @SuppressLint("SetJavaScriptEnabled")
+class AboutHeSheActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_pdf_view)
+        setContentView(R.layout.activity_about_he_she)
 
+        var participateBtn=findViewById<Button>(R.id.ParticipateNow)
 
         val toolbar: Toolbar = findViewById(R.id.title_toolbar)
 
@@ -35,8 +33,8 @@ class PdfViewActivity : AppCompatActivity() {
         webView.settings.javaScriptEnabled = true
         webView.settings.setSupportZoom(true)
 
-        val url = intent.getStringExtra("URL")!!
-
+      //  val url = intent.getStringExtra("URL")!!
+        var url = "https://www.bhoomikavihar.in/HomeAndroid/AboutHeShe"
         webView.loadUrl(url)
         webView.webViewClient = object : WebViewClient() {
             override fun onPageFinished(view: WebView, url: String) {
@@ -49,23 +47,12 @@ class PdfViewActivity : AppCompatActivity() {
                 Intent(Intent.ACTION_VIEW, Uri.parse(url))
             )
         }
-//
-//        swipeRefreshLayout.setOnRefreshListener {
-//            progressbar.visibility = View.VISIBLE
-//            webView.loadUrl(url)
-//            webView.webViewClient = object : WebViewClient() {
-//                override fun onPageFinished(view: WebView, url: String) {
-//                    progressbar.visibility = View.GONE
-//                }
-//            }       // refresh your list contents somehow
-//            swipeRefreshLayout.isRefreshing = false   // reset the SwipeRefreshLayout (stop the loading spinner)
-//        }
+        participateBtn.setOnClickListener{
 
-    }
+            val intent = Intent(this, RegisterParticipentActivity::class.java)
+             startActivity(intent)
+            finish()
+        }
 
-
-    override fun onSupportNavigateUp(): Boolean {
-        onBackPressed()
-        return true
     }
 }

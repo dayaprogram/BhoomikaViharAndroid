@@ -58,90 +58,90 @@ class MainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
     }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.main, menu)
-        return true
-    }
+//    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+//        // Inflate the menu; this adds items to the action bar if it is present.
+//        menuInflater.inflate(R.menu.main, menu)
+//        return true
+//    }
 
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // Handle item selection
-        return when (item.itemId) {
-            R.id.action_Sync -> {
-                if (userRole == "AC") {
-                    val mainIntent = Intent(this, SyncApp::class.java)
-                    startActivity(mainIntent)
-                }
-
-                true
-            }
-            R.id.action_profile -> {
-//                val mainIntent = Intent(this, MyProfile::class.java)
-//                startActivity(mainIntent)
-                true
-            }
-            R.id.action_logout -> {
-                var sessionManager: SessionManager = SessionManager(this)
-                //val mainIntent = Intent(this, LoginActivity::class.java)
-                sessionManager.clearToken()
-                //startActivity(mainIntent)
-                //finish()
-                true
-            }
-
-
-            //=====Dayanand Logout Code=====
-
-            /*R.id.action_logout -> {
-                var sessionManager: SessionManager = SessionManager(this)
-
-                val mainIntent = Intent(this, SplashScreen::class.java)
-                var apiClient = ApiClient()
-                //if (userRole == "AC") {
-                apiClient.getApiService(applicationContext)
-                    .acLogout()
-                    .enqueue(object : Callback<Int> {
-                        override fun onFailure(call: Call<Int>, t: Throwable) {
-                            Toast.makeText(
-                                applicationContext,
-                                "Something Wrong !",
-                                Toast.LENGTH_LONG
-                            ).show()
-                        }
-
-                        override fun onResponse(
-                            call: Call<Int>,
-                            response: Response<Int>
-                        ) {
-                            if (response.isSuccessful) {
-                                // if (response.body() == 1) {
-                                sessionManager.clearToken()
-                                startActivity(mainIntent)
-                                finish()
-                                // }
-                            } else {
-                                Toast.makeText(
-                                    applicationContext,
-                                    "Something Wrong !",
-                                    Toast.LENGTH_SHORT
-                                ).show()
-                            }
-                        }
-                    })
-                // }
-                true
-            }*/
-
-
-            else -> super.onOptionsItemSelected(item)
-
-
-        }
-    }
+//
+//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+//        // Handle item selection
+//        return when (item.itemId) {
+//            R.id.action_Sync -> {
+//                if (userRole == "AC") {
+//                    val mainIntent = Intent(this, SyncApp::class.java)
+//                    startActivity(mainIntent)
+//                }
+//
+//                true
+//            }
+//            R.id.action_profile -> {
+////                val mainIntent = Intent(this, MyProfile::class.java)
+////                startActivity(mainIntent)
+//                true
+//            }
+//            R.id.action_logout -> {
+//                var sessionManager: SessionManager = SessionManager(this)
+//                //val mainIntent = Intent(this, LoginActivity::class.java)
+//                sessionManager.clearToken()
+//                //startActivity(mainIntent)
+//                //finish()
+//                true
+//            }
+//
+//
+//            //=====Dayanand Logout Code=====
+//
+//            /*R.id.action_logout -> {
+//                var sessionManager: SessionManager = SessionManager(this)
+//
+//                val mainIntent = Intent(this, SplashScreen::class.java)
+//                var apiClient = ApiClient()
+//                //if (userRole == "AC") {
+//                apiClient.getApiService(applicationContext)
+//                    .acLogout()
+//                    .enqueue(object : Callback<Int> {
+//                        override fun onFailure(call: Call<Int>, t: Throwable) {
+//                            Toast.makeText(
+//                                applicationContext,
+//                                "Something Wrong !",
+//                                Toast.LENGTH_LONG
+//                            ).show()
+//                        }
+//
+//                        override fun onResponse(
+//                            call: Call<Int>,
+//                            response: Response<Int>
+//                        ) {
+//                            if (response.isSuccessful) {
+//                                // if (response.body() == 1) {
+//                                sessionManager.clearToken()
+//                                startActivity(mainIntent)
+//                                finish()
+//                                // }
+//                            } else {
+//                                Toast.makeText(
+//                                    applicationContext,
+//                                    "Something Wrong !",
+//                                    Toast.LENGTH_SHORT
+//                                ).show()
+//                            }
+//                        }
+//                    })
+//                // }
+//                true
+//            }*/
+//
+//
+//            else -> super.onOptionsItemSelected(item)
+//
+//
+//        }
+//    }
 }
