@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bhoomikabihar.surveyapp.Activity.ContactUs
 import com.bhoomikabihar.surveyapp.Activity.PaymentGetway.DonationActivity
 import com.bhoomikabihar.surveyapp.Activity.PdfViewActivity
+import com.bhoomikabihar.surveyapp.Activity.RegistrationFeedback.AboutHeSheActivity
 import com.bhoomikabihar.surveyapp.Activity.RegistrationFeedback.RegisterParticipentActivity
 import com.bhoomikabihar.surveyapp.Model.DashBoardContain
 import com.bhoomikabihar.surveyapp.R
@@ -117,7 +118,7 @@ class HomeFragment : Fragment(), RecyclerViewClickInterface {
                 DashBoardContain(
                     "Certifications",
                     "Certifications And Compliances",
-                    "Complete details of Certifications And Compliances",
+                    "Complete details of Certifications, etc.",
                     R.drawable.certificateandcomp
                 ),
 
@@ -141,7 +142,7 @@ class HomeFragment : Fragment(), RecyclerViewClickInterface {
 
     override fun onItemClick(position: Int) {
         if (DashBoardContainList[position].intentID == "Suggestion") {
-            val intent = Intent(requireView().context, RegisterParticipentActivity::class.java)
+            val intent = Intent(requireView().context, AboutHeSheActivity::class.java)
             requireView().context.startActivity(intent)
         }
         if (DashBoardContainList[position].intentID ==  "Donate") {

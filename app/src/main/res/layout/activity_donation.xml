@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".Activity.RegistrationFeedback.RegisterParticipentActivity">
 
-
     <include
         android:id="@+id/titlebar"
         layout="@layout/app_title_bar"
@@ -16,7 +15,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <ScrollView
         android:layout_width="match_parent"
@@ -50,9 +48,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/card_view_boardershashi"
                     android:gravity="center"
-                    android:paddingBottom="15dp"
+                    android:paddingBottom="4dp"
                     android:orientation="vertical"
                     android:paddingTop="15dp">
 
@@ -61,7 +58,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:paddingTop="0dp"
+                        android:paddingTop="40dp"
                         android:paddingBottom="5dp"
                         android:text="Support Marginalized Girls/Women (Bihar)"
                         android:textSize="15sp"
@@ -70,7 +67,7 @@
 
                         />
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="350sp"
                         android:layout_height="15dp"
                         android:layout_alignParentBottom="true"
                         android:background="#3F51B5"
@@ -88,16 +85,22 @@
 
                     <EditText
                         android:id="@+id/mobileno"
-                        android:layout_width="match_parent"
+                        android:layout_width="350sp"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:hint="Mobile No"
                         android:inputType="number"
                         android:maxLength="10" />
-
+                    <EditText
+                        android:id="@+id/pan"
+                        android:layout_width="350sp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:hint="PAN Number"
+                        android:inputType="text" />
                     <EditText
                         android:id="@+id/email"
-                        android:layout_width="match_parent"
+                        android:layout_width="350sp"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:hint="Email"
@@ -105,7 +108,7 @@
 
                     <EditText
                         android:id="@+id/donationAmt"
-                        android:layout_width="match_parent"
+                        android:layout_width="350sp"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:hint="Donation Amount"
@@ -136,7 +139,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="8dp"
 
                     android:paddingLeft="20dp"
                     android:paddingTop="10dp"
@@ -145,6 +148,63 @@
                     android:text="Secure Payments via Razorpay payment gateway"
                     android:textColor="#000000"
                     android:textSize="12sp"
+                    android:textStyle="italic" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="For Payment Receipts"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="left"
+                     />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#070707"
+                    android:gravity="center">
+
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:paddingTop="35dp"-->
+                    <!--                        android:paddingBottom="0dp"-->
+                    <!--                        android:text="Order #RZP42"-->
+                    <!--                        android:textSize="12sp" />-->
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp"
+                    android:layout_gravity="left"
+                    android:text="1. Kindly Mail Bhoomika Vihar At: bhoomikavihar@gmail.com"
+                    android:textColor="#000000"
+                    android:textSize="10sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp"
+                    android:layout_gravity="left"
+                    android:text="2. You can Call Us : +91-7903973532"
+                    android:textColor="#000000"
+                    android:textSize="10sp"
                     android:textStyle="italic" />
 
             </LinearLayout>
