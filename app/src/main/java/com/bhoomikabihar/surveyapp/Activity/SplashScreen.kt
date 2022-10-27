@@ -8,7 +8,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.bhoomikabihar.surveyapp.R
 import com.example.dbtagri.RemoteDataRepository.SessionManager
 import com.google.android.play.core.appupdate.AppUpdateManager
-import com.google.android.play.core.appupdate.AppUpdateManagerFactory
 import com.google.android.play.core.install.model.AppUpdateType
 import com.google.android.play.core.install.model.UpdateAvailability
 
@@ -35,8 +34,8 @@ class SplashScreen : AppCompatActivity() {
 
 
     private fun redirectToIntentAfterSplashScreen() {
-        var sessionManager: SessionManager = SessionManager(this)
-        val authUser = sessionManager.fetchAuthACDetails()
+       // var sessionManager: SessionManager = SessionManager(this)
+       // val authUser = sessionManager.fetchAuthACDetails()
         //if (authUser.userRole == "AC" || authUser.userRole == "CO" || authUser.userRole == "DAO" || authUser.userRole == "ADM(Revenue)") {
             val mainIntent = Intent(this, MainActivity::class.java)
             startActivity(mainIntent)

@@ -17,24 +17,12 @@
     <!--        android:label="Farmer Verification"-->
     <!--        tools:layout="@layout/activity_farmer_list_verify" />-->
     <activity
-        android:id="@+id/nav_gallery1"
-        android:name="com.bhoomikabihar.surveyapp.Activity.PMKisanVerification.SocialAuditVerificationListActivity"
-        android:label="Farmer Verification"
-        tools:layout="@layout/activity_farmer_list_verify" />
+        android:id="@+id/heshe"
+        android:name="com.bhoomikabihar.surveyapp.Activity.RegistrationFeedback.AboutHeSheActivity" />
     <activity
-        android:id="@+id/nav_gallery"
-        android:name="com.bhoomikabihar.surveyapp.Activity.PMKisanVerification.PMKisanListVerifyActivity"
-        android:label="Farmer Verification"
-        tools:layout="@layout/activity_farmer_list_verify" />
+        android:id="@+id/rfp"
+        android:name="com.bhoomikabihar.surveyapp.Activity.RegistrationFeedback.AboutHeSheActivity" />
     <activity
-        android:id="@+id/nav_PMKRecovery"
-        android:name="com.bhoomikabihar.surveyapp.Activity.PMKisanRecovery.PMKisanListRecoveryActivity"
-        android:label="Farmer Verification"
-        tools:layout="@layout/activity_farmer_list_verify" />
-
-    <activity
-        android:id="@+id/nav_slideshow"
-        android:name="com.bhoomikabihar.surveyapp.Activity.InputSubsidy.InputSubsidyActivity"
-        android:label="Input Subsidy Verification"
-        tools:layout="@layout/input_subsidy_activity" />
+        android:id="@+id/newsactivity"
+        android:name="com.bhoomikabihar.surveyapp.Activity.RegistrationFeedback.AboutHeSheActivity" />
 </navigation>

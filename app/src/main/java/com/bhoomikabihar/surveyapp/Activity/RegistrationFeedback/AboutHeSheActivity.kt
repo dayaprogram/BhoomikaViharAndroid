@@ -55,4 +55,8 @@ class AboutHeSheActivity : AppCompatActivity() {
         }
 
     }
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
 }

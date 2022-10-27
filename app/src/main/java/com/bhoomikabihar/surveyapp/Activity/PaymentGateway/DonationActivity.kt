@@ -1,4 +1,4 @@
-package com.bhoomikabihar.surveyapp.Activity.PaymentGetway
+package com.bhoomikabihar.surveyapp.Activity.PaymentGateway
 
 import android.app.Activity
 import android.content.DialogInterface
@@ -122,6 +122,10 @@ class DonationActivity : AppCompatActivity(), PaymentResultWithDataListener, Ext
     }
 
     override fun onClick(dialog: DialogInterface?, which: Int) {
+    }
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 
 }
