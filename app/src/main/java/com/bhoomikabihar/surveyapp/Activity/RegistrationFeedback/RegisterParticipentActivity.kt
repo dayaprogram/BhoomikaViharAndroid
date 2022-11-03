@@ -12,7 +12,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.bhoomikabihar.surveyapp.Activity.PdfViewActivity
 import com.bhoomikabihar.surveyapp.Model.User
-import com.bhoomikabihar.surveyapp.R
+import com.bhoomikavihar.surveyapp.R
 import com.example.dbtagri.RemoteDataRepository.SessionManager
 import com.google.android.material.textfield.TextInputEditText
 
@@ -118,7 +118,7 @@ class RegisterParticipentActivity : AppCompatActivity() {
             var url =
                 "https://www.bhoomikavihar.in/MobileApp/RegisterParticipant?Name=" +
                         data.name + "&MobileNo=" + data.mobileNo +
-                        "&EmailId=" + data.emailId
+                        "&EmailId=" + data.emailId+"&Gender=" + data.gender
             intent.putExtra("URL", url)
             startActivity(intent)
         }

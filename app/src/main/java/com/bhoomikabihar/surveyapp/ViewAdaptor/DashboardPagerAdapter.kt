@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.viewpager.widget.PagerAdapter
-import com.bhoomikabihar.surveyapp.R
+import com.bhoomikavihar.surveyapp.R
 
 
 class DashboardPagerAdapter(private var context: Context) : PagerAdapter() {

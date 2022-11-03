@@ -4,7 +4,7 @@ import android.os.Build
 import android.os.Bundle
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import com.bhoomikabihar.surveyapp.R
+import com.bhoomikavihar.surveyapp.R
 
 class ContactUs : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.M)

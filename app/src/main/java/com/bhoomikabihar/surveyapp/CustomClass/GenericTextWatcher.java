@@ -5,7 +5,8 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.EditText;
 
-import com.bhoomikabihar.surveyapp.R;
+import com.bhoomikavihar.surveyapp.R;
+
 
 public class GenericTextWatcher implements TextWatcher {
     private final EditText[] editText;

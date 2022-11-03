@@ -11,7 +11,7 @@ import android.webkit.WebViewClient
 import android.widget.Button
 import android.widget.ProgressBar
 import androidx.appcompat.widget.Toolbar
-import com.bhoomikabihar.surveyapp.R
+import com.bhoomikavihar.surveyapp.R
 
 class AboutHeSheActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,8 +23,8 @@ class AboutHeSheActivity : AppCompatActivity() {
         val toolbar: Toolbar = findViewById(R.id.title_toolbar)
 
         setSupportActionBar(toolbar)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true);
-        supportActionBar?.setDisplayShowHomeEnabled(true);
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
         val webView = findViewById<WebView>(R.id.webViewActivity)
         webView!!.webViewClient = WebViewClient()
         webView.webChromeClient = WebChromeClient()

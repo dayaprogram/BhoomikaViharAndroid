@@ -8,10 +8,7 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission
-        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
-        tools:ignore="ProtectedPermissions" />
-     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" /> <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -29,7 +26,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Activity.RegistrationFeedback.AboutHeSheActivity"
+            android:name="com.bhoomikabihar.surveyapp.Activity.RegistrationFeedback.AboutHeSheActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -37,18 +34,18 @@
         </activity>
 
         <activity
-            android:name=".Activity.PaymentGateway.DonationActivity"
+            android:name="com.bhoomikabihar.surveyapp.Activity.PaymentGateway.DonationActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Activity.RegistrationFeedback.FeedbackQuestionActivity"
+            android:name="com.bhoomikabihar.surveyapp.Activity.RegistrationFeedback.FeedbackQuestionActivity"
             android:exported="false"
             android:label="@string/app_name" />
         <activity
-            android:name=".Activity.RegistrationFeedback.RegisterParticipentActivity"
+            android:name="com.bhoomikabihar.surveyapp.Activity.RegistrationFeedback.RegisterParticipentActivity"
             android:exported="false"
             android:label="@string/app_name" />
 
@@ -57,14 +54,14 @@
             android:name="com.google.android.actions"
             android:resource="@xml/provide_paths" />
 
-        <activity android:name=".Activity.PdfViewActivity" />
-        <activity android:name=".Activity.SyncApp" />
-        <activity android:name=".Activity.ContactUs" />
+        <activity android:name="com.bhoomikabihar.surveyapp.Activity.PdfViewActivity" />
+        <activity android:name="com.bhoomikabihar.surveyapp.Activity.SyncApp" />
+        <activity android:name="com.bhoomikabihar.surveyapp.Activity.ContactUs" />
 
 
 
         <activity
-            android:name=".Activity.SplashScreen"
+            android:name="com.bhoomikabihar.surveyapp.Activity.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -74,7 +71,7 @@
         </activity>
 
         <activity
-            android:name=".Activity.MainActivity"
+            android:name="com.bhoomikabihar.surveyapp.Activity.MainActivity"
             android:label="@string/app_name" />
 
         <provider

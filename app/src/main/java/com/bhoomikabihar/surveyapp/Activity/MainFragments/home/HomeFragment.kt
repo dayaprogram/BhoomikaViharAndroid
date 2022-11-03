@@ -16,7 +16,7 @@ import com.bhoomikabihar.surveyapp.Activity.PaymentGateway.DonationActivity
 import com.bhoomikabihar.surveyapp.Activity.PdfViewActivity
 import com.bhoomikabihar.surveyapp.Activity.RegistrationFeedback.AboutHeSheActivity
 import com.bhoomikabihar.surveyapp.Model.DashBoardContain
-import com.bhoomikabihar.surveyapp.R
+import com.bhoomikavihar.surveyapp.R
 import com.bseb.crossword.ViewAdaptor.DashboardMenuAdaptor
 import com.example.dbtagri.RemoteDataRepository.SessionManager
 import com.example.dbtagri.ViewAdaptor.RecyclerViewClickInterface

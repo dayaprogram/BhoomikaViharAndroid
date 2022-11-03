@@ -13,7 +13,7 @@ import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bhoomikabihar.surveyapp.Model.DashBoardContain
-import com.bhoomikabihar.surveyapp.R
+import com.bhoomikavihar.surveyapp.R
 import com.example.dbtagri.ViewAdaptor.RecyclerViewClickInterface
 
 

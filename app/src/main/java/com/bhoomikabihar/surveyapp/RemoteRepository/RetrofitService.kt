@@ -3,9 +3,8 @@ package com.example.dbtagri.RemoteDataRepository
 import android.content.Context
 import android.content.SharedPreferences
 import com.bseb.crossword.RemoteDataRepository.ApiService
-import com.bhoomikabihar.surveyapp.Model.LoginResponse
 import com.bhoomikabihar.surveyapp.Model.User
-import com.bhoomikabihar.surveyapp.R
+import com.bhoomikavihar.surveyapp.R
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.Response

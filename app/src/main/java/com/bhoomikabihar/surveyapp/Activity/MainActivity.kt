@@ -13,7 +13,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import com.bhoomikabihar.surveyapp.Activity.RegistrationFeedback.AboutHeSheActivity
-import com.bhoomikabihar.surveyapp.R
+import com.bhoomikavihar.surveyapp.R
 import com.example.dbtagri.RemoteDataRepository.SessionManager
 import com.google.android.material.navigation.NavigationView
 

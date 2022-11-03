@@ -3,7 +3,7 @@ package com.bhoomikabihar.surveyapp.Activity.RegistrationFeedback
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.widget.Toolbar
-import com.bhoomikabihar.surveyapp.R
+import com.bhoomikavihar.surveyapp.R
 
 class FeedbackQuestionActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

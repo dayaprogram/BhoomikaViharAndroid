@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import com.bhoomikabihar.surveyapp.R
+import com.bhoomikavihar.surveyapp.R
 
 class GalleryFragment : Fragment() {
 

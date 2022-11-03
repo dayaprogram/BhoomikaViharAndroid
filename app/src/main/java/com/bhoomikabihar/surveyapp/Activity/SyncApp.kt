@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import com.bhoomikabihar.surveyapp.Model.ViewModels.CommanViewModel
-import com.bhoomikabihar.surveyapp.R
+import com.bhoomikavihar.surveyapp.R
 
 class SyncApp : AppCompatActivity() {
     lateinit var viewModel: CommanViewModel

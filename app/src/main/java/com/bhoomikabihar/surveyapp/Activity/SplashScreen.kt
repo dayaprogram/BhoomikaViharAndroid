@@ -5,8 +5,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
-import com.bhoomikabihar.surveyapp.R
-import com.example.dbtagri.RemoteDataRepository.SessionManager
+import com.bhoomikavihar.surveyapp.R
 import com.google.android.play.core.appupdate.AppUpdateManager
 import com.google.android.play.core.install.model.AppUpdateType
 import com.google.android.play.core.install.model.UpdateAvailability
