@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.heshe, R.id.rfp, R.id.newsactivity
+                R.id.nav_home, R.id.heshe, R.id.rfp, R.id.newsactivity, R.id.joinus, R.id.Intern
             ), drawerLayout
         )
 
@@ -117,6 +117,20 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
             R.id.newsactivity -> {
                 var url = "https://www.bhoomikavihar.in/HomeAndroid/MediaCorner"
+                startActivity(
+                    Intent(this, PdfViewActivity::class.java)
+                        .putExtra("URL", url)
+                )
+            }
+            R.id.joinus -> {
+                var url = "https://bhoomikavihar.in/HomeAndroid/JoinUs"
+                startActivity(
+                    Intent(this, PdfViewActivity::class.java)
+                        .putExtra("URL", url)
+                )
+            }
+            R.id.Intern -> {
+                var url = "https://bhoomikavihar.in/HomeAndroid/internship"
                 startActivity(
                     Intent(this, PdfViewActivity::class.java)
                         .putExtra("URL", url)
